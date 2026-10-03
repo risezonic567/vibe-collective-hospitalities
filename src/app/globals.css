@@ -1,26 +1,102 @@
 @import "tailwindcss";
 
+@theme {
+  --color-navy: #1d3347;
+  --color-navy-dark: #12212e;
+  --color-navy-light: #2c4a63;
+  --color-ink: #14202b;
+  --color-ink-muted: #536474;
+  --color-ivory: #f7f3ec;
+  --color-ivory-light: #fdfbf7;
+  --color-sand: #e8dfd0;
+  --color-sand-light: #f2ebd9;
+  --color-sand-dark: #cfc2ad;
+  --color-gold: #b8975a;
+  --color-gold-light: #cca96a;
+  --color-gold-dark: #96773e;
+
+  --font-serif: var(--font-cormorant), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-jost), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-navy: #1d3347;
+  --color-ink: #14202b;
+  --color-ivory: #f7f3ec;
+  --color-sand: #e8dfd0;
+  --color-gold: #b8975a;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  background-color: #f7f3ec;
+  color: #14202b;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f3ec;
+  color: #14202b;
+  font-family: var(--font-jost), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Accessibility focus indicator conforming to WCAG AA */
+:focus-visible {
+  outline: 2px solid #b8975a;
+  outline-offset: 3px;
+}
+
+/* Skip to content link */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: 9999;
+  background-color: #1d3347;
+  color: #f7f3ec;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  text-decoration: underline;
+  transition: top 0.2s ease-in-out;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* Subtle image hover zoom */
+.hover-zoom-img {
+  transition: transform 700ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.group:hover .hover-zoom-img {
+  transform: scale(1.05);
+}
+
+/* Gold thin dividers */
+.gold-divider {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(184, 151, 90, 0) 0%, rgba(184, 151, 90, 0.6) 50%, rgba(184, 151, 90, 0) 100%);
+}
+
+.gold-divider-solid {
+  height: 1px;
+  background-color: rgba(184, 151, 90, 0.35);
+}
+
+/* Prefers reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }
