@@ -26,8 +26,8 @@ export function Navbar() {
     if (!mobileMenuOpen) return undefined;
 
     previousOverflowRef.current = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    closeBtnRef.current?.focus();
+    document.body.style.overflow = "hidden"
+    closeBtnRef.current?.focus()
 
     const handleKeyDown = (event) => {
       if (event.key === "Escape") {
