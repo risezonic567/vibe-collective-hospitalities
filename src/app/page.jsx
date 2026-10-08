@@ -42,7 +42,6 @@ export default function HomePage() {
         ],
     };
     return (<>
-      {/* JSON-LD Schema */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}/>
 
       <section className="home-hero relative flex min-h-screen min-h-[100svh] items-end overflow-hidden  text-[#f7f3ec]">
