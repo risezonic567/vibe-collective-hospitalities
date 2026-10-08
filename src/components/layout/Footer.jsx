@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { site } from "@/config/site";
 import { Container } from "../ui/Container";
-import { InstagramIcon, FacebookIcon, YoutubeIcon, LinkedinIcon } from "../ui/SocialIcons";
+import { InstagramIcon, FacebookIcon, YoutubeIcon, LinkedinIcon, PinterestIcon } from "../ui/SocialIcons";
 export function Footer() {
     const currentYear = new Date().getFullYear();
     return (<footer className="bg-[#1d3347] text-[#f7f3ec] border-t border-[#b8975a]/25 pt-20 pb-12">
@@ -95,6 +95,9 @@ export function Footer() {
               </a>
               <a href={site.socials.linkedin} target="_blank" rel="noopener noreferrer" aria-label="Connect with Vibe Collective on LinkedIn" className="w-10 h-10 rounded-full border border-[#b8975a]/40 flex items-center justify-center text-[#f7f3ec] hover:border-[#b8975a] hover:bg-[#b8975a] hover:text-[#14202b] transition-all duration-300">
                 <LinkedinIcon className="w-4 h-4"/>
+              </a>
+              <a href={site.socials.pinterest} target="_blank" rel="noopener noreferrer" aria-label="Follow Vibe Collective on Pinterest" className="w-10 h-10 rounded-full border border-[#b8975a]/40 flex items-center justify-center text-[#f7f3ec] hover:border-[#b8975a] hover:bg-[#b8975a] hover:text-[#14202b] transition-all duration-300">
+                <PinterestIcon className="w-4 h-4"/>
               </a>
             </div>
           </div>

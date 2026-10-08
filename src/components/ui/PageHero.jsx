@@ -5,12 +5,11 @@ import { ParallaxImage } from "./ParallaxImage";
 export function PageHero({ eyebrow, title, description, image, alt, }) {
     return (<section className="relative min-h-[55vh] md:min-h-[65vh] flex items-center justify-center bg-[#1d3347] text-[#f7f3ec] overflow-hidden pt-28 pb-20 md:pt-36 md:pb-24">
       {/* Background Image with Cinematic Overlay */}
-      <div className="absolute inset-0 z-0">
-        <ParallaxImage src={image} alt={alt} className="object-cover object-center filter brightness-90"/>
-        <div className="absolute inset-0 bg-gradient-to-b from-[#142433]/85 via-[#1d3347]/75 to-[#1d3347]" aria-hidden="true"/>
-        <div className="absolute inset-0 bg-radial from-transparent via-transparent to-[#12212e]/70" aria-hidden="true"/>
-      </div>
-
+    <div className="absolute inset-0 z-0">
+  <ParallaxImage src={image} alt={alt} className="object-cover object-center"/>
+  <div className="absolute inset-0 bg-gradient-to-b from-[#142433]/60 via-[#1d3347]/30 to-[#1d3347]/70" aria-hidden="true"/> 
+   <div className="absolute inset-0 bg-radial from-transparent via-transparent to-[#12212e]/30" aria-hidden="true"/>
+</div>
       <Container className="relative z-10 text-center max-w-4xl mx-auto">
         <div className="flex justify-center mb-4">
           <Eyebrow light>{eyebrow}</Eyebrow>
@@ -26,5 +25,5 @@ export function PageHero({ eyebrow, title, description, image, alt, }) {
           {description}
         </p>
       </Container>
-    </section>);
+    </section>)
 }

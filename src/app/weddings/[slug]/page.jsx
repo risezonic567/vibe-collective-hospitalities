@@ -44,6 +44,7 @@ export async function generateMetadata({ params }) {
         },
     };
 }
+
 export default async function WeddingDetailPage({ params }) {
     const { slug } = await params;
     const item = getWeddingBySlug(slug);
@@ -66,11 +67,10 @@ export default async function WeddingDetailPage({ params }) {
         { label: item.title },
     ];
     return (<>
-      {/* Wedding Detail Hero with Cover Image & Single H1 */}
       <section className="relative min-h-[55vh] md:min-h-[65vh] flex items-center justify-center bg-[#1d3347] text-[#f7f3ec] overflow-hidden pt-28 pb-20 md:pt-36 md:pb-24">
         <div className="absolute inset-0 z-0">
           <Image src={item.coverImage.src} alt={item.coverImage.alt} fill priority sizes="100vw" className="object-cover object-center filter brightness-90"/>
-          <div className="absolute inset-0 bg-gradient-to-b from-[#142433]/85 via-[#1d3347]/75 to-[#1d3347]" aria-hidden="true"/>
+         <div className="absolute inset-0 bg-gradient-to-b from-[#142433]/55 via-[#142433]/45 to-[#142433]/55" aria-hidden="true"/>
         </div>
 
         <Container className="relative z-10 text-center max-w-4xl mx-auto">
@@ -99,7 +99,6 @@ export default async function WeddingDetailPage({ params }) {
         </Container>
       </section>
 
-      {/* Narrative & Wedding Dossier */}
       <Section variant="ivory" className="border-b border-[#e8dfd0]">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">

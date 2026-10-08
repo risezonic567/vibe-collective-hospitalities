@@ -57,8 +57,8 @@ export default function HomePage() {
             <Image src={media.hero.poster} alt="Luxury palace celebration at dusk" fill priority sizes="100vw" className="home-hero-media object-cover brightness-90"/>
           </div> */}
 
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(20,32,43,0.66)_0%,rgba(20,32,43,0.36)_43%,rgba(20,32,43,0.06)_100%)]" aria-hidden="true"/>
-          <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(20,32,43,0.68)_0%,rgba(20,32,43,0.28)_36%,rgba(20,32,43,0)_78%)]" aria-hidden="true"/>
+          {/* <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(20,32,43,0.66)_0%,rgba(20,32,43,0.36)_43%,rgba(20,32,43,0.06)_100%)]" aria-hidden="true"/> 
+           <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(20,32,43,0.68)_0%,rgba(20,32,43,0.28)_36%,rgba(20,32,43,0)_78%)]" aria-hidden="true"/> */}
         </div>
 
         <Container className="relative z-10 w-full pt-32 pb-16 sm:pb-20 md:pb-24 lg:pb-[88px]">

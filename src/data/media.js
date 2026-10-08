@@ -46,7 +46,7 @@ export const media = {
         ],
     },
     about: {
-        hero: "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1800&q=80", // Refined private pavilion
+        hero: "/Image/banner/About Us Banner.jpg.jpeg", // Refined private pavilion
         story: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80", // Iconic resort detail
         craftsmanship: "https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=1200&q=80", // Floral artistry
         team: [
@@ -77,7 +77,7 @@ export const media = {
         ],
     },
     journey: {
-        hero: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1800&q=80", // Serene estate grounds
+        hero: "/Image/banner/Journey Banner.jpg.jpeg", // Serene estate grounds
         milestones: [
             {
                 year: "2015",
@@ -112,7 +112,7 @@ export const media = {
         ],
     },
     events: {
-        hero: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1800&q=80",
+        hero: "/Image/banner/Event Banner.jpg.jpeg",
         items: [
             {
                 id: "evt-1",
@@ -171,7 +171,7 @@ export const media = {
         ],
     },
     weddings: {
-        hero: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1800&q=80",
+        hero: "/Image/banner/Wedding Banner.jpg.jpeg",
         gallery: [
             "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=900&q=80",
             "https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=900&q=80",

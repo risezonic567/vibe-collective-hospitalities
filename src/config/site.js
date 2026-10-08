@@ -12,10 +12,11 @@ export const site = {
     ],
     officeHours: "Monday to Saturday: 10:00 AM – 7:30 PM IST", // TODO: replace with operating hours
     socials: {
-        instagram: "https://instagram.com/vibecollective", // TODO: replace with verified Instagram handle
-        facebook: "https://facebook.com/vibecollective", // TODO: replace with verified Facebook page
+        instagram: "https://www.instagram.com/vibecollectivehospitality/",
+        facebook: "https://www.facebook.com/VibeCollectiveHospitality/",
         youtube: "https://youtube.com/@vibecollective", // TODO: replace with verified YouTube channel
-        linkedin: "https://linkedin.com/company/vibecollective", // TODO: replace with verified LinkedIn profile
+        linkedin: null,
+        pinterest: "https://www.pinterest.com/vibecollectivehospitality/",
     },
     nav: [
         { label: "About", href: "/about" },

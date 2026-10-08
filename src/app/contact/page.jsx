@@ -7,7 +7,7 @@ import { Section } from "@/components/ui/Section";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { ContactForm } from "@/components/sections/ContactForm";
-import { InstagramIcon, FacebookIcon, YoutubeIcon, LinkedinIcon } from "@/components/ui/SocialIcons";
+import { InstagramIcon, FacebookIcon, YoutubeIcon, LinkedinIcon, PinterestIcon } from "@/components/ui/SocialIcons";
 export const metadata = {
     title: "Contact Our Concierge | Bespoke Consultation",
     description: "Initiate a confidential dialogue with our event directors. Inquire regarding palace weddings, curated estate retreats, and luxury gatherings.",
@@ -138,8 +138,15 @@ export default function ContactPage() {
                   <a href={site.socials.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-9 h-9 rounded-full border border-[#e8dfd0] flex items-center justify-center text-[#1d3347] hover:border-[#b8975a] hover:bg-[#b8975a] hover:text-[#14202b] transition-all">
                     <LinkedinIcon className="w-4 h-4"/>
                   </a>
+
+                   <a href={site.socials.pinterest} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-9 h-9 rounded-full border border-[#e8dfd0] flex items-center justify-center text-[#1d3347] hover:border-[#b8975a] hover:bg-[#b8975a] hover:text-[#14202b] transition-all">
+                    <PinterestIcon className="w-4 h-4"/>
+                  </a>
+
+
+                   
                 </div>
-              </div>
+              </div> 
             </div>
 
             {/* Right Column: Contact & Enquiry Form */}
