@@ -12,10 +12,12 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { Accordion } from "@/components/ui/Accordion";
 import { DetailPrevNext, DetailRelatedSection, DetailCTA, } from "@/components/ui/DetailNav";
 export const dynamicParams = false;
+
 export function generateStaticParams() {
     const slugs = getEventSlugs();
     return slugs.map((slug) => ({ slug }));
 }
+
 export async function generateMetadata({ params }) {
     const { slug } = await params;
     const item = getEventBySlug(slug);
@@ -44,6 +46,7 @@ export async function generateMetadata({ params }) {
         },
     };
 }
+
 export default async function EventDetailPage({ params }) {
     const { slug } = await params;
     const item = getEventBySlug(slug);
@@ -66,7 +69,6 @@ export default async function EventDetailPage({ params }) {
         { label: item.title },
     ];
     return (<>
-      {/* Event Hero with Cover Image & Single H1 */}
       <section className="relative min-h-[55vh] md:min-h-[65vh] flex items-center justify-center bg-[#1d3347] text-[#f7f3ec] overflow-hidden pt-28 pb-20 md:pt-36 md:pb-24">
         <div className="absolute inset-0 z-0">
           <Image src={item.coverImage.src} alt={item.coverImage.alt} fill priority sizes="100vw" className="object-cover object-center filter brightness-90"/>
@@ -171,7 +173,6 @@ export default async function EventDetailPage({ params }) {
             </div>
           </div>
 
-          {/* Gallery */}
           {item.gallery && item.gallery.length > 0 && (<div className="pt-16 mt-16 border-t border-[#e8dfd0]">
               <div className="text-center max-w-xl mx-auto mb-10">
                 <Eyebrow>Scenography Archive</Eyebrow>

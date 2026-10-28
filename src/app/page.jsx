@@ -98,7 +98,7 @@ export default function HomePage() {
           <div className="flex justify-center mb-6">
             <Eyebrow>The Philosophy</Eyebrow>
           </div>
-          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.6rem] font-serif font-normal text-[#14202b] leading-[1.3] tracking-tight">
+          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.3rem] font-serif font-normal text-[#14202b] leading-[1.3] tracking-tight">
             We do not merely organize events; we compose living tapestries.
             Where ancient royal hospitality meets contemporary architectural scenography,
             leaving you free to be completely present in your celebration.
@@ -206,7 +206,7 @@ export default function HomePage() {
               <h3 className="text-xl font-serif font-medium text-[#1d3347] mb-3">
                 Planning & Direction
               </h3>
-              <p className="text-sm text-[#4a5a6a] font-light leading-relaxed">
+              <p className="text-md text-[#4a5a6a] font-light leading-relaxed">
                 Strategic timelines, budgeting transparency, vendor choreography, and discreet executive liaison.
               </p>
             </div>
@@ -219,7 +219,7 @@ export default function HomePage() {
               <h3 className="text-xl font-serif font-medium text-[#1d3347] mb-3">
                 Hospitality & Stays
               </h3>
-              <p className="text-sm text-[#4a5a6a] font-light leading-relaxed">
+              <p className="text-md text-[#4a5a6a] font-light leading-relaxed">
                 Palace buyouts, guest itinerary design, bespoke gifting suites, and dedicated 24/7 concierges.
               </p>
             </div>
@@ -231,7 +231,7 @@ export default function HomePage() {
               <h3 className="text-xl font-serif font-medium text-[#1d3347] mb-3">
                 Design & Décor
               </h3>
-              <p className="text-sm text-[#4a5a6a] font-light leading-relaxed">
+              <p className="text-md text-[#4a5a6a] font-light leading-relaxed">
                 Spatial scenography, sculptural floral installations, bespoke stationery, and lighting scores.
               </p>
             </div>
@@ -244,7 +244,7 @@ export default function HomePage() {
               <h3 className="text-xl font-serif font-medium text-[#1d3347] mb-3">
                 Experience & Tech
               </h3>
-              <p className="text-sm text-[#4a5a6a] font-light leading-relaxed">
+              <p className="text-md text-[#4a5a6a] font-light leading-relaxed">
                 Architectural projection mapping, world-class sound engineering, dynamic stages, and artist curation.
               </p>
             </div>
@@ -263,7 +263,7 @@ export default function HomePage() {
                 <h3 className="text-xs uppercase tracking-[0.2em] font-sans text-[#f7f3ec] font-medium pt-1">
                   {item.label}
                 </h3>
-                <p className="text-xs text-[#e8dfd0]/70 font-light max-w-xs mx-auto">
+                <p className="text-sm text-[#e8dfd0]/70 font-light max-w-xs mx-auto">
                   {item.description}
                 </p>
               </div>))}

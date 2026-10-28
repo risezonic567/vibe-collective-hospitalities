@@ -156,6 +156,7 @@ export const eventsData = [
             "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=1200&q=80",
         ],
     },
+    
     {
         id: "evt-5",
         slug: "himalayan-forest-wellness-sanctuary",
@@ -191,6 +192,7 @@ export const eventsData = [
             "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
         ],
     },
+
     {
         id: "evt-6",
         slug: "monsoon-terrace-music-cocktail-lounge",
@@ -227,6 +229,7 @@ export const eventsData = [
         ],
     },
 ];
+
 export const whatWeHandle = [
     {
         title: "Signature Venues & Private Estates",
@@ -253,6 +256,7 @@ export const whatWeHandle = [
         desc: "Private aviation, helicopter transfers, luxury coach convoys, and personalized chauffeur fleets.",
     },
 ];
+
 export const eventProcess = [
     {
         step: "01",
