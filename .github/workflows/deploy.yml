@@ -20,6 +20,9 @@ jobs:
           script_stop: true
           script: |
             set -e
+            if [ ! -d /var/www/vibe-collective-hospitalities ]; then
+              git clone https://github.com/risezonic567/vibe-collective-hospitalities.git /var/www/vibe-collective-hospitalities
+            fi
             cd /var/www/vibe-collective-hospitalities
             git pull origin main
             touch .env
