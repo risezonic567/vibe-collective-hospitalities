@@ -1,30 +1,24 @@
 # Vibe Collective Hospitality
 
-The site is built with the Next.js App Router and JavaScript.
+Next.js site for [vibecollectivehospitality.com](https://vibecollectivehospitality.com).
 
-## Getting Started
-
-Install dependencies and start the development server:
+## Local
 
 ```bash
+cp .env.example .env
 npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## VPS (Docker + Nginx)
 
-The application pages and components are in `src/`. The root route is `src/app/page.jsx`.
+App listens on host `127.0.0.1:6300` → container `:3000`. Nginx should proxy the domain and forward client IP:
 
-## Production
-
-```bash
-npm run lint
-npm run build
-npm start
+```nginx
+proxy_set_header X-Real-IP $remote_addr;
+proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+proxy_set_header Host $host;
+proxy_set_header X-Forwarded-Proto $scheme;
 ```
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Push to `main` triggers GitHub Actions deploy (`git pull` + `docker compose up -d --build`).

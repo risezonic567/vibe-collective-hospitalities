@@ -2,7 +2,7 @@ export const site = {
     name: "Vibe Collective Hospitality",
     shortName: "Vibe Collective",
     tagline: "Hospitality, designed to be remembered.",
-    url: "https://vibecollective.com", // TODO: replace with production domain
+    url: "https://vibecollectivehospitality.com",
     phone: "+91 92667 30494",
     whatsapp: "919266730494",
     email: "info.vicoh@gmail.com",
