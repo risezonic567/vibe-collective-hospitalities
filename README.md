@@ -12,7 +12,7 @@ npm run dev
 
 ## VPS (Docker + Nginx)
 
-App listens on host `127.0.0.1:6300` → container `:3000`. Nginx should proxy the domain and forward client IP:
+App listens on host `127.0.0.1:6301` → container `:3000`. Nginx should proxy the domain and forward client IP:
 
 ```nginx
 proxy_set_header X-Real-IP $remote_addr;
