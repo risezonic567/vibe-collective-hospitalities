@@ -7,8 +7,7 @@ export const site = {
     whatsapp: "919266730494",
     email: "info.vicoh@gmail.com",
     address: [
-        "Level 4, The Grand Pavilion, 18 MG Road", // TODO: replace with actual office line 1
-        "Bengaluru, Karnataka 560001, India", // TODO: replace with actual city, state, country
+       "RZ11/D, Upper Ground Floor Opp. Palam Metro Station Gate No 3, Palam Dwarka Road, Delhi, 110045"
     ],
     officeHours: "Monday to Saturday: 10:00 AM – 7:30 PM IST", // TODO: replace with operating hours
     socials: {
